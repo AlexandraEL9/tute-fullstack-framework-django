@@ -1,0 +1,639 @@
+INTRODUCTION
+Frameworks let you focus on the enjoyable parts,
+the solution you're actually trying to  build, while attempting to take away the pain
+and the stresses of the repetitive plumbing that  takes place on nearly every project.
+By doing that, many frameworks provide high level abstractions  of commonly used development patterns.
+Shortcuts for common tasks and clear conventions on how to  tackle and solve problems. By the way, thinking in
+abstractions means we group things in categories  and we analyze these relationships within these categories.
+These concepts and relationships can  be made real in our code, software programs are
+built on top of concepts that are made real,   they're the moving parts of a software machine.
+
+FRAMEWORK GOALS
+So what are the framework goals?
+
+Well according to Johnson and Foote,
+a framework is a reusable, "semi-complete" application that can be specialized to
+produce custom applications. 
+
+Frameworks allow you to build your applications
+without having to worry about all the plumbing that goes into making your
+application work at the lower levels. 
+
+A lot of the plumbing can be hidden from
+the developer, depending on the type of framework have being used.
+
+Frameworks overcome the need for a repetitive coding, and the possible errors resulting from that.
+And more importantly, they generally follow what's called the MVC pattern,
+more about that later. 
+
+Frameworks can be and are used all the time in
+accelerating a projects time to market and they significantly reduce
+development costs in getting you there.
+
+Frameworks are written by some of the best coders in the world, which is a huge
+advantage to to those new to development, juniors, and so on. 
+
+They all have their
+own philosophy and while they do have overlapping sets of features each comes
+with added uniqueness that can be radically different. 
+
+They manage
+complexity by giving us the places and the patterns to reduce that complexity.
+
+Some frameworks specify how to name files, where to put them, and how they
+interact with each other. Django for example, is a framework that does this.
+
+A developer who's familiar with these common patterns, can quickly get up to
+speed on an existing project or get a head start on a new project by using the
+pre-existing code and functionality that frameworks provide. 
+
+So what are the goals
+of the framework? 
+
+Reuse is one, code design domain analysis and documentation called dry.
+
+Simplify software development, by enabling agile practices.
+
+Reduce cold writing, allow inexperienced designers and programmers to develop really good software.
+
+Etxract the knowledge of experienced designers and programmers
+and they have their basic properties as well. 
+
+So what are they?
+The basic properties are modularity, reusability, extensibility, inversion of control,
+and non-modifiable code.
+
+GOOD DEVELOPMENT PRINCIPLES
+
+Okay, what are good development principles?
+
+Well software developers are presented with all types of project scenarios from
+clients, these range from simple apps to highly complex multi-layered projects.
+
+A common failing is to try and design the solutions in a more complex way than
+they really need to be. This can be down to inexperience and a lack of knowledge
+of design patterns or more commonly down to the pressure to get code shipped out.
+
+Many developers when asked, even a few months after a project went live, how
+or why they coded parts of a solution in a particular way. They will often respond
+with an answer like, I'm not really sure actually I was just in the zone at the
+time and trying to battle my way towards getting the thing working.
+
+So one effect of this, is that the resulting code can be pretty much
+impenetrable to everyone else and it doesn't lend itself to being reused in a
+similar situation the next time it's required. 
+
+Of course, there's also the
+approach that some coders take called macho coding or write only code. Where
+the developer is really just showing off their chops by using obscure and terse
+syntax they know no mere mortal can understand. This approach is equally bad,
+in terms of reuse. The reality is that many developers move through and out of
+projects and jobs every year or so. The code they leave behind should be
+understandable and easily modified by the next person who takes on the work,
+this is really important. 
+
+Now there are three fundamental principles that if
+applied will make the lives of all stakeholders in a project just that
+little bit better. 
+
+And as ever in the IT industry these principles are identified
+as acronyms. 
+
+So these are KIS, YAGNI, and DRY. 
+
+Let's look at the first one, so
+
+KIS stands for keep it simple. The simpler your code is, the simpler it will
+be to maintain it in the future. And of course if other people see it they'll
+thank you for that simplicity. Don't go macho, you'll only end up eating alone in
+the office cafeteria. The KIS principle states that most
+systems work best if they're kept simple, rather than making them complex.
+So simplicity should be a key goal in design and that applies to all design
+across the layers of the solution, including the UI and the database.
+All unnecessary complexity should be avoided, don't use obscure features from the
+programming language that you're working with just because the language lets you
+use them in the first place. Now that's not to say, that you shouldn't use these
+features at all but use them only when there are actually benefits to the
+problem you're solving in the first place. 
+
+So the second principle is YANGI,
+you aren't going to need it. Developers often project into the future,
+when coding a solution to a project. They try and anticipate any extra features
+that might be needed at some point but not right now.
+While this thinking comes from caring how a solution needs to scale the
+chances are, if you don't need it now then you most likely won't need it later.
+Build a minimal Viable Product or MVP at all times,
+then add features only when there's an actual need to YAGNI the term YAGNI,
+comes from the extreme programming. At the extreme drawing principle of do
+the simplest thing that could possibly work. This applies to all kinds of lean
+and agile thinking at all levels and to all stakeholders involved in a project
+not just the direct developers. So if you do feel the need to pile on some extra
+features onto your plate, remind yourself of the workload that you have in just
+getting the current required work done instead.
+Don't waste time coding features that you might need to modify later or that
+may never leave your machine at all. 
+
+So, the last principle is DRY and that means
+don't repeat yourself. This was coined by Andrew Hunt and David Thomas in their
+book the pragmatic programmer, an excellent book by the way. This was based on
+similar chunks of code popping up time after time in different projects and
+often in different parts of the same project. This repetition can take place
+at the levels of variables, or functions, and on up to large components of a
+solution. The thinking behind DRY is that
+knowledge must have a single unambiguous authority of representation within the system.
+Or in other words, do things one time in one place rather than having the
+same or similar code scattered throughout your codebase.
+Why is this important? Well there's two reasons, the first is that it makes change easier
+later on, if you only need to make a change in a single location. The second
+is that it really helps when it is time for maintenance, people will
+thank you, you will thank yourself later on, there's only a single point of change
+to be made. By the way when the DRY principle is violated it's often called
+WET which stands for write everything twice,
+or we enjoy typing. The DRY principle is very useful, especially in
+large applications where they are constantly maintained, modified,
+and extended by lots of programmers.
+A good coder cultivates the virtue of laziness. but not just any laziness. You
+must be aggressive and productively lazy, that's according to Chris Hine when
+dealing with a dry rule. So a good programmer is a lazy programmer, that thinks
+things through they'll build it once and reuse it again. 
+
+So let's look at an
+example, you might be involved in building a large software project.
+You will initially be overwhelmed by the overall complexity because we
+humans are not good at managing complexity. What we are good at is finding
+creative solutions for problems that are small chunk above manageable units and a
+basic strategy for reducing complexity, to these manageable units is to divide a
+system into parts that are more easily tackled. You might first want to divide
+your system into components, where each component represents a subsystem that
+contains everything needed to accomplish- some specific
+functionality. 
+
+For example, if you're building a web application that includes
+membership, a blog, maybe a forum, some kind of payment system and
+administration area, you might chunk each of these features into components.
+The membership component, could be divided into say smaller sub components
+like role management authorization and authentication. 
+
+When we divide systems
+into components and subcomponents we eventually arrive at a level where the
+complexity is reduced to a single responsibility. These responsibilities
+can sometimes be implemented as single functions. At this level, the problems
+become easier to solve and the result can be a clean well thought-out solution
+that can be understood and reused again in later projects.
+That solution represents the responsibility. It can communicate with other islands of
+responsibility, that it can turn communicate with other islands
+themselves, to compose an overall solution to the more abstract high-level
+problem that the project is trying to solve in the first place.
+
+The DRY principle insists that each Island of responsibility is unique in what it does.
+What emerges when DRY is implemented what is what call is what's called a
+separation of concerns. 
+
+The separation of concerns can also apply at
+higher levels too. 
+
+In object-oriented programming, classes define properties
+and behaviors of objects and each class should be responsible for one and only
+one thing. That thing might be to display a video, pay a bill, monitor a heartbeat,
+open a door, or even turn off a light. No whether classes in a system should have
+a duplicate responsibility. Why? Well because it gets messy and confusing.
+Which class do I work with to turn off the light? If I modify the behavior in
+one class do I need to modify this similar class too? 
+
+We can further scale
+up the notion of separation of concerns and DRY to an even higher level. We can
+separate the user interface component of a system from the parts that access a
+database. 
+We can then separate out the part the part of the subsystem that
+communicates between the UI and the database. This separation takes to
+form a well-known pattern, that pattern is called Model View controller or the
+MVC pattern, and that's what we look at next.
+
+MVC- (Model View Controller)
+
+Now let's have a look at MVC, but first what is a pattern? 
+- Well in software
+development, a pattern or design pattern is a dock is a written document that
+describes the general solution to a design problem
+that recurs repeatedly in many projects. 
+
+Software designers adapt the
+pattern solution to their specific project. 
+
+Now one such pattern used at the
+heart of most frameworks is a Model View controller or MVC pattern. 
+
+So MVC is an
+architectural programming pattern, it's been around since 1979, it's used by the
+multitude of web frameworks. 
+It's a way of thinking about and processing
+information. 
+It's a way to structure your applications, 
+it's a way of working with data in its three manifestations, 
+        data at rest is the model, 
+        data in motion is thecontroller, 
+        nd data is presented is the view, 
+    more about that later. 
+    
+Frameworks implement implement the MVC pattern but the pattern is not a framework.
+
+Frameworks are popular because of MVC so what are MVC goals? 
+
+Well one is to
+promote cold reusability, separation of concerns, and the goal of MVC and related
+patterns is to separate data management and presentation. 
+By breaking
+applications down into smaller more discreet and easier to manage components,
+as we just alluded to, Software can be broken into three key components 
+        the model, 
+        the view, 
+        and the controller. 
+        
+To understand MVC better let's look at the
+structure and flow of a web app in doing so we'll first look at the t
+
+-raditional
+flow. So at its center the web is nothing more than a multitude of web enabled
+devices that request files and resources from web servers. Web browsers make
+requests, and a web server responds to a request by sending an HTML file or some
+other resource. It's this elegant simplicity devised by Tim Bernerslee,
+that allow the users and uses of the web and the Internet to explode in the way it has.
+
+Some requests include streaming video or music, requiring an open pipe
+between the web server and browser but even so, the initial
+request-response cycle delivers the page that sets up the stream. 
+
+We can reduce
+the mystery of how the web works, to its simplest components. When we take a look
+at their request will come and the request and response cycle. We see that
+everything that happens in web application takes place within the flow
+of their- of the request response cycle. The client displays and
+presentation and structure to the end user. 
+
+In web applications the client
+display is made up of HTML and CSS and JavaScript of varying degrees of
+complexity. 
+The client makes requests to the server logic for any data it requires.
+Often, the server maintains the business logic to deal with the client request
+for data this logic is often written in a specialized server-side language such
+as Python, Ruby, c-sharp, Java, or PHP and more commonly nowadays JavaScript,
+when using the node.js platform. 
+
+The server logic makes calls to the datastore of
+some kind, often a relational database and SQL or sequel is the most commonly used
+language here. 
+The database then returns the result of a server query back to the
+server. 
+The server embeds this data within the presentation code and this is
+then returned to the browser. 
+
+For many years has been common to mix the
+languages HTML, CSS, a c-sharp, and sequel, in the same code file. This is poor
+design and implementation. complex applications require specialists or
+full stack knowledge of working with data and it's tree manifestations. 
+
+HTML
+is used to work with data as presented. P
+
+Python for example is used to work with
+data in motion, logic. 
+
+And SQL is used to work with data at rest.
+
+MVC solves the problem of mixing these responsibilities in the same file.
+So applications and in particular web applications can quickly become quite
+complex, as we mentioned. 
+
+Hundreds of lines of CSS can be written to produce
+an eye-catching responsive UI. 
+
+Client-side logic might require lots of
+hand coded JavaScript, as well, as the use of third-party JavaScript libraries.
+
+Languages such as Python are used to carry out the service
+logic and also access the data directly from some kind of data store or
+indirectly through API's. 
+
+All of this can get messy and hard to manage.
+
+Some languages such as PHP allow you to write all of the code to enable this to happen in
+a single page, this is a bad idea. 
+Imagine having a team of web designers
+skilled only in CSS and HTML making changes to code that contains JavaScript
+and the possibility of accidentally editing the JavaScript code. 
+Also imagine,
+database programmers having to edit calls to a database in a webpage while
+avoiding stepping on the work done by JavaScript developers and front-end
+designers. 
+So what if we could separate the logic from the styling, and the
+styling from the data access well we can using MVC 
+
+MVC allows us to separate the
+parts of the application based on the concerns of the developers involved.
+It's based on the traditional flow of data but promotes the separation of concerns
+we discussed earlier. 
+
+So let's take a little bit closer look at the the MVC
+pattern. 
+
+So the model, well the model represents persistent data accessed from
+or to be written to some data store. 
+The model represents the data you are
+working with, and models are part of the application to implement the logic for
+the applications data domain. 
+Often model code retrieves and stores data in a
+database. 
+For example, a product model object might retrieve information from a
+database operate on it and then write updated information back to a products
+table in a database. 
+The model might have direct access to the database or it may
+access to some data service via an API. 
+
+So the view, well views are comprised of
+HTML, CSS, and other elements that make up the look and feel of an application.
+Views are the components that display the applications user interface or UI.
+They're often constructed as templates with placeholders for data to be
+injected to them for display on your screen. 
+Typically this UI is
+populated from the model data. 
+An example, would be an edit view of a product table
+that displays text boxes, drop-down lists, and checkboxes with data based on the
+current state of a product object. 
+
+So we also then have controllers the C in the
+MVC well a controller that's the code that does the thinking and
+decision-making. 
+Controllers are components that handled user interaction,
+they work with the model, and ultimately select a view to render that displays
+the UI, so that glue. 
+In an MVC application the view only displays
+information that the controller handles and responds to you in response to user
+input and interaction. 
+For example, the controller handles query string values
+in the URL and passes these values to the model which in turn, might use these
+values to query a database. 
+So let's break that down again because that's
+it's a bit complicated and still a little mouthful in the beginning. 
+So the
+model is used for adding and retrieving data from a database or other structure.
+It talks only to the controller, no contact with the view, sometimes it does though.
+Python, JavaScript, Java, Ruby, c-sharp, they're all useful to this. 
+So the view
+consists can consists of templates it's the only thing that the user sees, and it
+talks and listens to only to the controller. And generally, it involves
+HTML and CSS. 
+
+Now the controller never talks to the database directly only to
+the model, the model responsible for fetching the data and exit. 
+It never
+talks to the screen directly either only to the view. So the event handling
+process such as get, put, and delete. These are all requests in the view and they're
+processed by the controller. 
+So, this whole approach no doubt seems a bit
+complicated. And you're probably thinking well what's the point of this? Well every
+application needs some structure, especially the more complex ones.
+MVC helps you stay organized from start to finish, you often end up writing less
+code not more. And also there's a shallower learning curve as your project grows.
+
+Django
+
+Now let's look at server-side frameworks, well server-side frameworks can be
+classified as either full or micro. 
+The difference between the two depends on
+how much low-level automation the framework is capable of.
+How many batteries for example, pre-install components come with the framework?
+
+Well full frameworks are chock full of pre-installed components and low-level
+automation, 
+
+while the micro frameworks as you might imagine come with less bells
+and whistles. 
+
+There are pros and cons to each framework type. So what are the pros for a full one?
+For example, like Django. 
+Well you get many batteries included, there's lots
+of lower-level automation, for example, object relational mapping.
+The cons of full frameworks are their larger size, their legs less flexible
+than micro because of the large structure, and it also becomes more
+opinionated. 
+
+So what are the pros of small ones? Something like flask, for
+example. Their small size, they have an initial shallower learning curve and
+they're very flexible to customization. 
+But the cons of this is there aren't as
+many batteries included as a full. There's less automation provided and the
+automation becomes steadily more complex when additional customization is
+required due to the lack of these pre-built components. 
+
+So choosing one
+particular framework for your project depends heavily on the project's requirements.
+Smaller projects are projects that require a lot of
+flexibility and customization, they typically used micro frameworks.
+
+Developers often use full frameworks for large projects that don't require much
+low-level framework customization. 
+
+So let's look at Django as a full framework.
+Well Django is a powerful full server-side framework written using Python.
+So when you're out in the world working as a developer you're going to
+have to work to a schedule and hit deadlines, which are always tighter
+than you'd like. 
+You're probably going to find that each project can have a common
+core set of issues. In addition to project specific ones, well what you need
+is a collection of tools that can take care of a lot of the heavy lifting so
+you can focus on the bigger picture. 
+Well this is where Django and a lot of other
+frameworks as well come in. 
+But as the Django
+Software Foundation put it, Django makes it easier to build
+better web apps, more quickly and with less code, so you can focus on writing
+your app without needing to reinvent the wheel.
+So why Django, why choose it? 
+Well it's a mature framework, it's been around since
+about 2003. 
+Django was originally developed as an in-house framework to
+manage a series of online news websites and Django grew organically
+from real-world applications written by a web development team in Kansas in USA.
+When web programmers at the Lawrence Journal World newspaper began using
+Python to build applications, the world online team who were responsible for the
+production and maintenance of several local news sites. Well they thrived in a
+development environment dictated by journalism deadlines. 
+There were three
+online newspapers owned and supported by the team there was the LJ World.com. there
+was Lawrence.com and cavesforce.com. The journalists on the team demanded the
+features be added an entire applications be built on incredibly short deadlines.
+Sometimes stuff had to be built or added even within hours. 
+So in an attempt
+to avoid repeating themselves and building the same stuff over and over
+again. The developers said about building a framework that suited their needs
+under such pressure. 
+They called a framework Django after their shared love
+of the jazz guitarist Django Reinhardt. 
+So, two years later the source code was
+then released publicly, on the net, and the Django team carried on with the
+development and contributing to the open-source model.
+Because Django was created in a news environment it has built-in features that are very suitable
+to content management. Such as an administration interface where
+developers and users can add and edit content and elements through a backdoor
+interface available only to authorized users. 
+Most data-driven web applications
+will require some kind of administration screens to add and modify data whether
+that data includes registered users on the site or products being sold.
+In keeping with its DRY philosophy, Django allows you to administer your
+model data through the webpage courtesy of the administration module.
+This saves you from having to build your own from scratch. And to enable the existence of
+authorized and authenticated users Django also comes with pre built
+authentication functionality, but don't think that Django is limited
+just to content management. 
+It's much more powerful and flexible than that.
+Django has steadily become a favorite amongst the Python development community.
+Currently Django sites.org lists nearly 5,000 sites built with this
+framework. The most famous of them being Pinterest, Instagram, and discuss.
+
+So EDX, for example, the massive open line online community course is developed jointly by
+Harvard and MIT is also developed by Django.
+What's more the edx is now open source and there are over 70 companies
+contributing to its development. So there's a ton of pre-built functionality
+available to anybody wanting to use this platform. 
+And because it's a free full
+stack framework Django serves is the perfect starting point if you're new to
+web frameworks. 
+Django's documentation is rich and mature which is a major plus
+for anyone trying to tackle the intricacies of a data-driven project for
+for the first time. 
+Also, Django's admin interface is great for
+data entry and testing during the early stages of a project. 
+So, to quote the
+official website in Django project.com, Django is a high-level Python web
+framework that encourages rapid development and clean pragmatic design.
+It's built by experienced developers, it takes care of much of the hassle of web
+development, so you can focus on writing your app without needing to reinvent the wheel
+it's free and it's also open source.
+
+DJANGO structure
+
+Now what does Django look like? 
+Well Django has built-in tools that are set
+up to create projects. 
+
+In Django a project is a container for your site, a
+project is really just a collection of apps. 
+And an app is a self-contained
+piece of functionality that contributes to your site as a whole. 
+For example, an app
+might be a payment system, or a blog, or a forum. 
+Apps are similar to modules in a
+content management system, CMS, but they tend to be a lot more smaller in scope.
+And they typically perform only one main function. This allows for the development
+and maintenance of a site at a more granular level. Individual apps can be
+modified or swapped out for other apps. All done in relative isolation
+from the functionality contained in other apps, separation of concerns.
+Multiple developers can work on the site via apps without corrupting each other's code.
+
+So for example, imagine you were building is a Facebook clone. You might
+create a project called, the social, for example. Well take a moment to consider
+the structure you would deploy in Django, for example. For instance, the site might
+may contain apps like messaging, timeline ratings, some kind of info wall, adding
+friends, upload media, etc. All of which contribute to the overall site experience and functionality.
+These apps can be built and maintained separately from each other,
+but are all controlled from the project. 
+
+Angular also adheres
+a variation of the MVC pattern. 
+
+So Django projects are logically organized around
+the MVC pattern or the MVC architecture. However, Django MVC architecture is
+slightly different, in that the views also act as controllers, more on this.
+At a high level Django is organized in a variation of
+the MVC pattern, known as the MVT model view template. Is this is confusing?
+
+Possibly, but there are different flavors of MVC that can be head scratching but in
+Django the MVC view is called the template. 
+The MVC model is still the
+model but the MV controller is called a view in Django. 
+So 
+        the template is the user interface, 
+        the model is still a model, 
+        and the logic lives in views. 
+        
+Okay let's look at models in Djano. 
+Well Django works brilliantly
+with databases, the framework can take developer defined Python classes and
+known as models, and automatically create database tables and their relationship for us.
+So also any changes to our models can be automatically reflected in our
+database schemas, its all automated this pattern is known as object relational
+mapping, ORM. 
+
+A model is a single definitive source of information about
+your data, it contains the essential fields and behaviors of the data you're storing.
+Generally each map model maps to a single database table. 
+
+To quickly get
+you up and running, Django comes with the SQLite database for development and
+testing. Although, I worked on a specialist project where a SQLite was
+used in production in general it lacks the power and functionality of say MySQL
+or Postgres, either which can be easily swapped in when deploying your project
+to a live or production environment. 
+
+Like other full-stack frameworks such as
+Ruby, or Rails, or asp.net, MVC, and spring, etc. Java, spring, etc.
+Django adheres to the philosophy of convention over configuration. 
+This means that a
+developer need only specify the unconventional aspects of the
+application. 
+For example, if there's a class called blog in our model or code,
+the framework will create a corresponding table in the database
+called blog by default. 
+It's only if you stray from this convention, such as
+calling the table the blog table, that you need to explicitly write the code to
+do that. 
+This implicit functionality is an example of hiding the plumbing that
+we touched upon earlier. Bear in mind though, that for the Python purists this
+breaks the Zen of Python decree that explicit is better than implicit. That is
+Pythonista's say it's better to see the code it does something rather
+than having it hidden from the developer. Well, why? Well because when it comes to
+fixing or improving behavior it's easier to do this when the behavior is right
+there in your code. It's one of the downsides of having bells and whistles
+and batteries in your framework.
+
+Django also has templates, so this is the presentation layer that defines how
+information is displayed to the end-user. 
+They visually represent the data model,
+the template layer provides a designer friendly syntax for rendering the
+information to be presented to the user. 
+
+So what is the template philosophy?
+So business logic should be separated from the presentation logic, templates are
+only concerned with presentation of data and other visual elements.
+It's impossible to call Python code directly within Django templates.
+
+Templates syntax should be decoupled from HTML and designers assumed to be comfortable with
+HTML and JavaScript code. 
+Designers are assumed not to be Python developers.
+Although, templates do accommodate small teams in which the templates are created
+by Python programmers. 
+The syntax-- template syntax is embedded within
+normal HTML and is used to inject data into a web page. 
+The most common template
+language used is the Django template language. 
+Although another templating
+language such as ginger 2 for example can be used with most python-based
+frameworks, including Django. 
+In the example in the template examples shown
+here, we are looping through a list of colors and displaying a HTML list of each
+coders name. Now the goal of a template language is not to invent a full-blown
+programming language. 
+
+The goal is to offer just enough programming ish
+functionality such as branching and looping, that allows us to make a GUI
+related decisions. 
+
+So let's have a look at the views, for example. 
+Now in Django,
+views define the business logic that link the templates and the models. Here's
+what happens when a visitor lands on your Django page, for example.
+So first, Django consults the various URL patterns that you've created and uses
+that information to retrieve a view. The view then processes the requests,
+querying your database via the models if it's necessary, the view then passes the
+quest information onto your template. The template then renders the data in a
+layout you've created and displays it on the page so down it and back up.
